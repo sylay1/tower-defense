@@ -32,5 +32,9 @@ public class EnemySpawner : MonoBehaviour
             yield return new WaitForSeconds(timebetween);
         }
     }
-    
+
+    public AEnemy[] GetAllAEnemies()
+    {
+       return GameObject.FindObjectsOfType<AEnemy>();
+    }
 }
