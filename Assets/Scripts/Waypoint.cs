@@ -5,11 +5,31 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 [ExecuteInEditMode]
-public class Waypoint : MonoBehaviour,IDragHandler
+public class Waypoint : MonoBehaviour, IDragHandler
 {
     private Vector2 offset;
     public Waypoint next = null;
-    public  double atan;
+    public double atan;
+    public bool InTrigger;
+    public float yValue;
+    public Vector3 s = new Vector3();
+    void Start()
+    {
+        if (next)
+        {
+            s = -transform.position + next.transform.position;
+            Rect r = new Rect((Vector2) transform.position, 
+                new Vector2(Vector3.Distance(transform.position, next.transform.position) * 0.5f, 0.5f));
+            atan = Math.Atan(-s.y / -s.x) * 180 / Math.PI;
+            if (Mathf.Sign(s.x) == 1 && Mathf.Sign(s.y) == -1) atan = 180 + atan;
+            if (Mathf.Sign(s.x) == 1 && Mathf.Sign(s.y) == 1) atan += 180;
+            if (Mathf.Sign(s.x) == -1 && Mathf.Sign(s.y) == 1) atan += 360;
+            yValue = Vector2.Distance((transform.position - s / 2f), Vector2.zero);
+            
+        }
+    }
+
+
     void Update()
     {
         if (Application.isEditor)
@@ -23,6 +43,8 @@ public class Waypoint : MonoBehaviour,IDragHandler
                 GetComponent<SpriteRenderer>().color = Color.cyan;
             }
         }
+
+        Camera.main.ScreenToWorldPoint(Input.mousePosition);
     }
 
     private void OnDrawGizmos()
@@ -32,8 +54,11 @@ public class Waypoint : MonoBehaviour,IDragHandler
         if (next)
         {
             Gizmos.DrawLine(transform.position,next.transform.position);
-            var s = -transform.position + next.transform.position;
-             atan = Math.Atan(s.y / s.x)*180/Math.PI;
+             s = -transform.position + next.transform.position;
+             atan = Math.Atan(-s.y / -s.x) * 180 / Math.PI;
+             if (Mathf.Sign(s.x) == 1 && Mathf.Sign(s.y) == -1) atan = 180 + atan;
+             if (Mathf.Sign(s.x) == 1 && Mathf.Sign(s.y) == 1) atan += 180;
+             if (Mathf.Sign(s.x) == -1 && Mathf.Sign(s.y) == 1) atan += 360;
             Matrix4x4 rotationMatrix = Matrix4x4.TRS((transform.position+next.transform.position)/2f,
                 Quaternion.Euler(0,0,(float)atan),
                 transform.lossyScale);
@@ -42,6 +67,16 @@ public class Waypoint : MonoBehaviour,IDragHandler
         }
          
     }
+    
+    public static Vector2 rotate(Vector2 v, float delta)
+    {
+        delta *= Mathf.Deg2Rad;
+        return new Vector2(
+            v.x * Mathf.Cos(delta) - v.y * Mathf.Sin(delta),
+            v.x * Mathf.Sin(delta) + v.y * Mathf.Cos(delta)
+        );
+    }
+
 
     public void OnDrag(PointerEventData eventData)
     {

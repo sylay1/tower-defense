@@ -11,6 +11,7 @@ public class Bullet : ABullet
         transform.Translate((dis).normalized * speed * Time.deltaTime);
         if (dis.magnitude<0.2f) //here paste the check is it is the enemy 
         {
+            if(Target)Target.SendMessage("GetDamage", damage);
             Die();
         }
         if (Target)
