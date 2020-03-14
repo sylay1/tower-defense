@@ -96,6 +96,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -287,6 +288,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -414,6 +416,7 @@ GameObject:
   - component: {fileID: 1273080144}
   - component: {fileID: 1273080143}
   - component: {fileID: 1273080142}
+  - component: {fileID: 1273080146}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -500,6 +503,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1273080146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1273080141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8355251cd307cb6489669848b66b8307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Healthbar_prefab: {fileID: 8422209353899145946, guid: ec6705def86a68c4f8191980d89d1bbe,
+    type: 3}
+  spawner: {fileID: 1841180963}
+  healthbars: []
 --- !u!1 &1517392641
 GameObject:
   m_ObjectHideFlags: 0
@@ -565,6 +584,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -660,6 +680,7 @@ GameObject:
   - component: {fileID: 1841180962}
   - component: {fileID: 1841180960}
   - component: {fileID: 1841180963}
+  - component: {fileID: 1841180964}
   m_Layer: 10
   m_Name: SpawnPoint
   m_TagString: Waypoint
@@ -708,6 +729,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -778,6 +800,22 @@ MonoBehaviour:
   - {fileID: 8085073340856690295, guid: b012aabc7ef4ea74d8403a26c6db8112, type: 3}
   enemiesSpawned: 0
   timebetween: 1
+--- !u!58 &1841180964
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841180959}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.1
 --- !u!1 &1852003295
 GameObject:
   m_ObjectHideFlags: 0
@@ -838,6 +876,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -905,6 +944,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Waypoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 5556687940243833601, guid: 661f9eac7e1173142b1c264d28b969e9,
+        type: 3}
+      propertyPath: next
+      value: 
+      objectReference: {fileID: 1852003297}
+    - target: {fileID: 5556687940243833601, guid: 661f9eac7e1173142b1c264d28b969e9,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5556687940243833854, guid: 661f9eac7e1173142b1c264d28b969e9,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5556687940243833854, guid: 661f9eac7e1173142b1c264d28b969e9,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5556687940243833855, guid: 661f9eac7e1173142b1c264d28b969e9,
         type: 3}
@@ -975,26 +1034,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 2.0386076
-      objectReference: {fileID: 0}
-    - target: {fileID: 5556687940243833854, guid: 661f9eac7e1173142b1c264d28b969e9,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5556687940243833854, guid: 661f9eac7e1173142b1c264d28b969e9,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5556687940243833601, guid: 661f9eac7e1173142b1c264d28b969e9,
-        type: 3}
-      propertyPath: next
-      value: 
-      objectReference: {fileID: 1852003297}
-    - target: {fileID: 5556687940243833601, guid: 661f9eac7e1173142b1c264d28b969e9,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 661f9eac7e1173142b1c264d28b969e9, type: 3}
