@@ -910,9 +910,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   next: {fileID: 1793840099}
-  atan: 90
+  atan: 270
   InTrigger: 0
   yValue: 26.269823
+  s: {x: 0, y: 7.39, z: 0}
 --- !u!4 &1473600027
 Transform:
   m_ObjectHideFlags: 0
@@ -1296,6 +1297,7 @@ MonoBehaviour:
   atan: 0
   InTrigger: 0
   yValue: 0
+  s: {x: 0, y: 0, z: 0}
 --- !u!58 &1793840100
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1525,9 +1527,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   next: {fileID: 301986431}
-  atan: 90
+  atan: 347.717159394341
   InTrigger: 0
   yValue: 34.59502
+  s: {x: -3.9499989, y: 0.8599999, z: 0}
 --- !u!4 &1841180961
 Transform:
   m_ObjectHideFlags: 0
@@ -1536,7 +1539,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1841180959}
   m_LocalRotation: {x: -0, y: -0, z: 0.0029296707, w: 0.9999957}
-  m_LocalPosition: {x: -5.5999985, y: -3.86, z: 0}
+  m_LocalPosition: {x: -1.65, y: 2.67, z: 0}
   m_LocalScale: {x: 2.0386076, y: 2.0386076, z: 2.0386076}
   m_Children: []
   m_Father: {fileID: 1517392642}
@@ -1689,9 +1692,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   next: {fileID: 1473600026}
-  atan: 0
+  atan: 180
   InTrigger: 0
   yValue: 31.859695
+  s: {x: 4.3099995, y: 0, z: 0}
 --- !u!212 &1852003298
 SpriteRenderer:
   m_ObjectHideFlags: 0
