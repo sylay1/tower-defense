@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="074a90a3-ce00-4a39-ba32-f502dce78139" name="Default Changelist" comment="" />
+    <list default="true" id="074a90a3-ce00-4a39-ba32-f502dce78139" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BasedClasses/ATower.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BasedClasses/ATower.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.tower-defense/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.tower-defense/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.tower-defense/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.tower-defense/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainGame.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI_Info.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI_Info.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Waypoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Waypoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,12 +21,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameMaster.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Waypoint.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Temp/Compiled-Custom-Sprites-OverlayStencil.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemySpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI_Info.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tower.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BasedClasses/ATower.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BasedClasses/ABullet.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -28,7 +41,11 @@
         <option value="$PROJECT_DIR$/Assets/UI_Info.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BasedClasses/ABullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameMaster.cs" />
+        <option value="$PROJECT_DIR$/Assets/nigg.shader" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI_Info.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Waypoint.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BasedClasses/ATower.cs" />
       </list>
     </option>
   </component>
@@ -70,6 +87,8 @@
       <option name="presentableId" value="Default" />
       <updated>1584194665418</updated>
       <workItem from="1584194681751" duration="10660000" />
+      <workItem from="1584209932410" duration="12254000" />
+      <workItem from="1584275163301" duration="2957000" />
     </task>
     <servers />
   </component>
@@ -78,4 +97,15 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
 </project>

@@ -31,7 +31,7 @@ public class UI_Info : MonoBehaviour
                 var go = Instantiate(Healthbar_prefab, transform);
                 healthbars.Add(go);
             }
-            healthbars[i].transform.position = Camera.main.WorldToScreenPoint(f[i].transform.position)+new Vector3(0,50,0);
+            healthbars[i].transform.position = Camera.main.WorldToScreenPoint(f[i].transform.position)+new Vector3(0,Screen.height*0.05f,0);
             healthbars[i].fillAmount = f[i].health / f[i].maxhealth;
         }
     }
