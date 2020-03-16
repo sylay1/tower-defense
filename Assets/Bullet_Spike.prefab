@@ -137,5 +137,5 @@ MonoBehaviour:
   speed: 10
   Target: {fileID: 0}
   targetPos: {x: 0, y: 0, z: 0}
-  lifetime: 2
+  lifetime: 1
   lifetime_timer: 0

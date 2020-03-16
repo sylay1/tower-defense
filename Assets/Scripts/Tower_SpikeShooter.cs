@@ -28,8 +28,6 @@ public class Tower_SpikeShooter : ATower
     }
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere(transform.position,radious);
         Gizmos.color = Color.magenta;
         Gizmos.DrawWireSphere(transform.position,radiousC);
         Gizmos.color = Color.red;

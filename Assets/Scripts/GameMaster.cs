@@ -17,6 +17,7 @@ public class GameMaster : MonoBehaviour
     public GameObject MouseCheck;
     public SpriteRenderer mcr;
     public ImportantThings im;
+    public List<ATower> TowersToPlace = new List<ATower>();
     public List<ATower> Towers = new List<ATower>();
     // Update is called once per frame
     private void Start()
@@ -38,6 +39,8 @@ public class GameMaster : MonoBehaviour
 
         if (state == STATE.BUILDING)
         {
+            if(Input.GetKeyDown(KeyCode.Alpha1))ChangeTowertype(TowersToPlace[0]);
+            if(Input.GetKeyDown(KeyCode.Alpha2))ChangeTowertype(TowersToPlace[1]);
             if (!MouseCheck)
             {
                 MouseCheck = new GameObject();
@@ -120,7 +123,6 @@ public class GameMaster : MonoBehaviour
         c.radius = towerToPlace.radiousC/towerToPlace.transform.lossyScale.x;
         MouseCheck.layer = LayerMask.NameToLayer("Abstract");
         MouseCheck.tag = "MouseCheck";
-
     }
 
     IEnumerator BuildATower()

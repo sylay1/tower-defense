@@ -13,7 +13,6 @@ public class Bullet_spike :ABullet
      lifetime_timer += Time.deltaTime;
      if (lifetime_timer > lifetime) Die();
     }
-
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (true)//here paste the check is it is the enemy 
@@ -21,5 +20,4 @@ public class Bullet_spike :ABullet
             other.gameObject.SendMessage("GetDamage",damage);
         }
     }
-
 }

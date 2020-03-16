@@ -125,7 +125,7 @@ public class Waypoint : MonoBehaviour, IDragHandler
         }
         if (!next) return false;
         tab = Physics2D.OverlapBoxAll((transform.position + next.transform.position) / 2f,
-            new Vector2(Vector3.Distance(transform.position, next.transform.position) * 0.5f, 0.5f),
+            new Vector2(Vector3.Distance(transform.position, next.transform.position), 1f),
             (float) atan);
         if (tab.Length==0) return false;
         foreach(Collider2D co in tab)

@@ -98,9 +98,9 @@ MonoBehaviour:
   radiousC: 0.5
   BulletPrefab: {fileID: 7337071128612626738, guid: d7751cc48267e464797bc61144aa2237,
     type: 3}
-  Damage: 10
+  Damage: 7
   level: 0
   dps: 1
   CurrentEnemy: {fileID: 0}
   _dpsTimer: 0
-  spikesnumber: 4
+  spikesnumber: 6
