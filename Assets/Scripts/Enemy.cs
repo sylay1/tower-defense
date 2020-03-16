@@ -28,7 +28,6 @@ public class Enemy : AEnemy
                 Nextpoint = Nextpoint.next;
                 if (Nextpoint == null) Destroy(gameObject);//here also do the damage to the player base
             }
-            
         }
     }
 
