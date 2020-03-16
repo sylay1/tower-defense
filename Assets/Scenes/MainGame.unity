@@ -204,86 +204,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &91556420
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 8720492642479591672, guid: d185ed9f39d82744897d781c3c1661c7,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -66.25985
-      objectReference: {fileID: 0}
-    - target: {fileID: 8720492642479591672, guid: d185ed9f39d82744897d781c3c1661c7,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 29.420403
-      objectReference: {fileID: 0}
-    - target: {fileID: 8720492642479591672, guid: d185ed9f39d82744897d781c3c1661c7,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8720492642479591672, guid: d185ed9f39d82744897d781c3c1661c7,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8720492642479591672, guid: d185ed9f39d82744897d781c3c1661c7,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8720492642479591672, guid: d185ed9f39d82744897d781c3c1661c7,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8720492642479591672, guid: d185ed9f39d82744897d781c3c1661c7,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8720492642479591672, guid: d185ed9f39d82744897d781c3c1661c7,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8720492642479591672, guid: d185ed9f39d82744897d781c3c1661c7,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8720492642479591672, guid: d185ed9f39d82744897d781c3c1661c7,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8720492642479591672, guid: d185ed9f39d82744897d781c3c1661c7,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8720492642479591677, guid: d185ed9f39d82744897d781c3c1661c7,
-        type: 3}
-      propertyPath: spikesnumber
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8720492642479591677, guid: d185ed9f39d82744897d781c3c1661c7,
-        type: 3}
-      propertyPath: BulletPrefab
-      value: 
-      objectReference: {fileID: 7337071128612626738, guid: d7751cc48267e464797bc61144aa2237,
-        type: 3}
-    - target: {fileID: 8720492642479591678, guid: d185ed9f39d82744897d781c3c1661c7,
-        type: 3}
-      propertyPath: m_Name
-      value: Tower_SpikeShooter (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d185ed9f39d82744897d781c3c1661c7, type: 3}
 --- !u!1 &134572966
 GameObject:
   m_ObjectHideFlags: 0
@@ -480,6 +400,9 @@ MonoBehaviour:
   MouseCheck: {fileID: 0}
   mcr: {fileID: 0}
   im: {fileID: 11400000, guid: 2a593db15b20f2f419beb2479e872268, type: 2}
+  TowersToPlace:
+  - {fileID: 3481167235780061851, guid: 4c4573efc58bc94498510969515f8d5f, type: 3}
+  - {fileID: 8720492642479591677, guid: d185ed9f39d82744897d781c3c1661c7, type: 3}
   Towers: []
 --- !u!4 &179972421
 Transform:
@@ -493,7 +416,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &208402399
 GameObject:
@@ -693,7 +616,7 @@ MonoBehaviour:
   vectorsangle: 63.57513427734375
   yValue: 76.064125
   s: {x: 4.290001, y: 0, z: 0}
-  rotated: {x: 69.47189, y: -38.300453}
+  rotated: {x: 88.500725, y: -27.67608}
   SphereSprite: {fileID: 1020214544}
   BoxSprite: {fileID: 163442034}
 --- !u!212 &301986432
@@ -1088,7 +1011,7 @@ MonoBehaviour:
   vectorsangle: 64.89421081542969
   yValue: 64.21459
   s: {x: -0.7900009, y: -2.8400002, z: 0}
-  rotated: {x: -55.5175, y: -56.666355}
+  rotated: {x: -50.38138, y: -77.84639}
   SphereSprite: {fileID: 208402399}
   BoxSprite: {fileID: 631628846}
 --- !u!212 &476379105
@@ -1450,7 +1373,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &802501449
 GameObject:
@@ -1835,7 +1758,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 0
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -2064,7 +1987,7 @@ RectTransform:
   - {fileID: 1109269427}
   - {fileID: 1952573273}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2366,7 +2289,7 @@ MonoBehaviour:
   vectorsangle: 66.40544891357422
   yValue: 67.81637
   s: {x: 2.4099998, y: 4.92, z: 0}
-  rotated: {x: 64.956154, y: 45.540825}
+  rotated: {x: 63.78569, y: 67.30326}
   SphereSprite: {fileID: 698745443}
   BoxSprite: {fileID: 348674205}
 --- !u!4 &1473600027
@@ -2487,7 +2410,7 @@ Transform:
   - {fileID: 476379102}
   - {fileID: 990974494}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1683414061
 GameObject:
@@ -2568,7 +2491,7 @@ Transform:
   m_LocalScale: {x: 8.720002, y: 4.752834, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1752854799
 GameObject:
@@ -2770,7 +2693,7 @@ MonoBehaviour:
   vectorsangle: 63.839195251464844
   yValue: 68.979355
   s: {x: 3.2700005, y: -0.9899998, z: 0}
-  rotated: {x: 55.39335, y: -56.787727}
+  rotated: {x: 76.684364, y: -52.133022}
   SphereSprite: {fileID: 592906758}
   BoxSprite: {fileID: 2051084152}
 --- !u!58 &1793840100
@@ -2892,7 +2815,7 @@ MonoBehaviour:
   vectorsangle: 66.98799896240234
   yValue: 73.59685
   s: {x: 2.2299957, y: 6.5699997, z: 0}
-  rotated: {x: 58.59728, y: 53.475494}
+  rotated: {x: 54.652718, y: 74.90945}
   SphereSprite: {fileID: 2085506466}
   BoxSprite: {fileID: 802501449}
 --- !u!4 &1841180961
@@ -3064,7 +2987,7 @@ MonoBehaviour:
   vectorsangle: 68.01911163330078
   yValue: 73.03732
   s: {x: 2.7699966, y: -2.92, z: 0}
-  rotated: {x: 20.025574, y: -76.76096}
+  rotated: {x: 40.82966, y: -83.254326}
   SphereSprite: {fileID: 2079896382}
   BoxSprite: {fileID: 345550497}
 --- !u!212 &1852003298
@@ -3313,7 +3236,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 0
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -3710,7 +3633,7 @@ MonoBehaviour:
   vectorsangle: 65.08643341064453
   yValue: 69.99895
   s: {x: -3.1899948, y: -4.710001, z: 0}
-  rotated: {x: -70.66943, y: -36.043034}
+  rotated: {x: -72.54354, y: -57.756195}
   SphereSprite: {fileID: 1752854799}
   BoxSprite: {fileID: 1405437041}
 --- !u!1 &5556687939547244825
@@ -3859,7 +3782,7 @@ PrefabInstance:
     - target: {fileID: 8720492642479591672, guid: d185ed9f39d82744897d781c3c1661c7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8720492642479591672, guid: d185ed9f39d82744897d781c3c1661c7,
         type: 3}
