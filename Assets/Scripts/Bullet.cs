@@ -11,7 +11,11 @@ public class Bullet : ABullet
         transform.Translate((dis).normalized * speed * Time.deltaTime);
         if (dis.magnitude<0.2f) //here paste the check is it is the enemy 
         {
-            if(Target)Target.SendMessage("GetDamage", damage);
+            if (Target)
+            {
+                Target.SendMessage("GetDamage", damage);
+                Target.GetComponent<AEnemy>().AddEffect(effect);
+            }
             Die();
         }
         if (Target)
@@ -24,6 +28,7 @@ public class Bullet : ABullet
     {
         if (true)//here paste the check is it is the enemy 
         {
+            Target.GetComponent<AEnemy>().AddEffect(effect);
             other.gameObject.SendMessage("GetDamage",damage);
             Die();
         }

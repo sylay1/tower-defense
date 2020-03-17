@@ -19,18 +19,20 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tower_SpikeShooter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ImportantThings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Waypoint.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameMaster.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Effect_Poison.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemySpawner.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bullet_spike.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI_Info.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ImportantThings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BasedClasses/AEffect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tower.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tower_SpikeShooter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameMaster.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BasedClasses/ATower.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BasedClasses/AEnemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BasedClasses/ABullet.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Waypoint.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BasedClasses/ATower.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -39,18 +41,22 @@
         <option value="$PROJECT_DIR$/Assets/EnemySpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/AEnemy.cs" />
         <option value="$PROJECT_DIR$/Assets/UI_Info.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BasedClasses/ABullet.cs" />
         <option value="$PROJECT_DIR$/Assets/nigg.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ImportantThings.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI_Info.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tower.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BasedClasses/ATower.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bullet_spike.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tower_SpikeShooter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Waypoint.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BasedClasses/ABullet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/nigg.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ImportantThings.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameMaster.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BasedClasses/AEnemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Effect_Poison.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BasedClasses/AEffect.cs" />
       </list>
     </option>
   </component>
@@ -95,6 +101,7 @@
       <workItem from="1584209932410" duration="12254000" />
       <workItem from="1584275163301" duration="3171000" />
       <workItem from="1584300443702" duration="21505000" />
+      <workItem from="1584458645288" duration="8061000" />
     </task>
     <servers />
   </component>
@@ -117,6 +124,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="794" y="235" key="RiderGenerateDialog" timestamp="1584467762703">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="794" y="235" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584467762703" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1584360646111">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
