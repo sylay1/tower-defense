@@ -41,6 +41,7 @@ public class GameMaster : MonoBehaviour
         {
             if(Input.GetKeyDown(KeyCode.Alpha1))ChangeTowertype(TowersToPlace[0]);
             if(Input.GetKeyDown(KeyCode.Alpha2))ChangeTowertype(TowersToPlace[1]);
+            if(Input.GetKeyDown(KeyCode.Alpha3))ChangeTowertype(TowersToPlace[2]);
             if (!MouseCheck)
             {
                 MouseCheck = new GameObject();
@@ -79,7 +80,8 @@ public class GameMaster : MonoBehaviour
 
     public bool CanBuild()
     {
-        if (!MouseCheck) {                mcr.color =new Color( mcr.color.r,mcr.color.g,mcr.color.b,0.2f);
+        if (!MouseCheck) {                
+            mcr.color =new Color( mcr.color.r,mcr.color.g,mcr.color.b,0.2f);
             return false;}
         MouseCheck.GetComponent<CircleCollider2D>().radius = towerToPlace.radiousC/towerToPlace.transform.localScale.x;
         var wp = GameObject.FindObjectsOfType<Waypoint>();

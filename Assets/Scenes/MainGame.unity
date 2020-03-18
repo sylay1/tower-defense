@@ -403,6 +403,7 @@ MonoBehaviour:
   TowersToPlace:
   - {fileID: 3481167235780061851, guid: 4c4573efc58bc94498510969515f8d5f, type: 3}
   - {fileID: 8720492642479591677, guid: d185ed9f39d82744897d781c3c1661c7, type: 3}
+  - {fileID: 58463014008986107, guid: e5da27d02913304408168230ffbc2718, type: 3}
   Towers: []
 --- !u!4 &179972421
 Transform:
@@ -616,7 +617,7 @@ MonoBehaviour:
   vectorsangle: 63.57513427734375
   yValue: 76.064125
   s: {x: 4.290001, y: 0, z: 0}
-  rotated: {x: 88.500725, y: -27.67608}
+  rotated: {x: 70.09706, y: -37.526466}
   SphereSprite: {fileID: 1020214544}
   BoxSprite: {fileID: 163442034}
 --- !u!212 &301986432
@@ -1011,7 +1012,7 @@ MonoBehaviour:
   vectorsangle: 64.89421081542969
   yValue: 64.21459
   s: {x: -0.7900009, y: -2.8400002, z: 0}
-  rotated: {x: -50.38138, y: -77.84639}
+  rotated: {x: -54.93937, y: -57.47608}
   SphereSprite: {fileID: 208402399}
   BoxSprite: {fileID: 631628846}
 --- !u!212 &476379105
@@ -2289,7 +2290,7 @@ MonoBehaviour:
   vectorsangle: 66.40544891357422
   yValue: 67.81637
   s: {x: 2.4099998, y: 4.92, z: 0}
-  rotated: {x: 63.78569, y: 67.30326}
+  rotated: {x: 64.53609, y: 46.44273}
   SphereSprite: {fileID: 698745443}
   BoxSprite: {fileID: 348674205}
 --- !u!4 &1473600027
@@ -2693,7 +2694,7 @@ MonoBehaviour:
   vectorsangle: 63.839195251464844
   yValue: 68.979355
   s: {x: 3.2700005, y: -0.9899998, z: 0}
-  rotated: {x: 76.684364, y: -52.133022}
+  rotated: {x: 56.21597, y: -56.228096}
   SphereSprite: {fileID: 592906758}
   BoxSprite: {fileID: 2051084152}
 --- !u!58 &1793840100
@@ -2815,7 +2816,7 @@ MonoBehaviour:
   vectorsangle: 66.98799896240234
   yValue: 73.59685
   s: {x: 2.2299957, y: 6.5699997, z: 0}
-  rotated: {x: 54.652718, y: 74.90945}
+  rotated: {x: 58.065296, y: 54.316257}
   SphereSprite: {fileID: 2085506466}
   BoxSprite: {fileID: 802501449}
 --- !u!4 &1841180961
@@ -2987,7 +2988,7 @@ MonoBehaviour:
   vectorsangle: 68.01911163330078
   yValue: 73.03732
   s: {x: 2.7699966, y: -2.92, z: 0}
-  rotated: {x: 40.82966, y: -83.254326}
+  rotated: {x: 21.017355, y: -76.68185}
   SphereSprite: {fileID: 2079896382}
   BoxSprite: {fileID: 345550497}
 --- !u!212 &1852003298
@@ -3633,7 +3634,7 @@ MonoBehaviour:
   vectorsangle: 65.08643341064453
   yValue: 69.99895
   s: {x: -3.1899948, y: -4.710001, z: 0}
-  rotated: {x: -72.54354, y: -57.756195}
+  rotated: {x: -70.379166, y: -36.994682}
   SphereSprite: {fileID: 1752854799}
   BoxSprite: {fileID: 1405437041}
 --- !u!1 &5556687939547244825
