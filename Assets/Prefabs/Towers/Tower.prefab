@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3481167235780061848}
-  - component: {fileID: 3481167235780061849}
   - component: {fileID: 3481167235780061851}
+  - component: {fileID: 3481167235780061849}
   m_Layer: 0
   m_Name: Tower
   m_TagString: Tower
@@ -32,6 +32,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3481167235780061851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3481167235780061854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ed3792ec7bebd94ea83f10cab543821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radious: 1.5
+  radiousC: 0.35
+  BulletPrefab: {fileID: 6553807444263534614, guid: 04e0b131d0d02d84fb3ccea2014e0512,
+    type: 3}
+  Damage: 10
+  level: 0
+  dps: 1.3
+  CurrentEnemy: {fileID: 0}
+  _dpsTimer: 0
+  StopShooting: 0
 --- !u!212 &3481167235780061849
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -70,7 +92,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 0.017132433, g: 0.3301887, b: 0.0985655, a: 1}
   m_FlipX: 0
@@ -82,24 +104,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3481167235780061851
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3481167235780061854}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ed3792ec7bebd94ea83f10cab543821, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  radious: 2.19
-  radiousC: 0.35
-  BulletPrefab: {fileID: 6553807444263534614, guid: 04e0b131d0d02d84fb3ccea2014e0512,
-    type: 3}
-  Damage: 10
-  level: 0
-  dps: 2
-  CurrentEnemy: {fileID: 0}
-  _dpsTimer: 0

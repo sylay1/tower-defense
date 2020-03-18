@@ -26,7 +26,7 @@ public class Bullet : ABullet
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (true)//here paste the check is it is the enemy 
+        if (other.CompareTag("Enemy"))//here paste the check is it is the enemy 
         {
             Target.GetComponent<AEnemy>().AddEffect(effect);
             other.gameObject.SendMessage("GetDamage",damage);

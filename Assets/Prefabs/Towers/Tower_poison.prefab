@@ -70,9 +70,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0.017132433, g: 0.3301887, b: 0.0985655, a: 1}
+  m_Color: {r: 0.21698111, g: 0.019446416, b: 0.18240318, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -94,7 +94,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ed3792ec7bebd94ea83f10cab543821, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radious: 2.19
+  radious: 1.8
   radiousC: 0.35
   BulletPrefab: {fileID: 8861148342519623888, guid: 21c845a6017c2434fba92bd467df8377,
     type: 3}
@@ -103,3 +103,4 @@ MonoBehaviour:
   dps: 0.5
   CurrentEnemy: {fileID: 0}
   _dpsTimer: 0
+  StopShooting: 0

@@ -1,8 +1,5 @@
 ﻿using UnityEngine;
-
-namespace DefaultNamespace
-{
-    [CreateAssetMenu(fileName = "ImportantThings", menuName = "ImportantThings", order = 0)]
+[CreateAssetMenu(fileName = "ImportantThings", menuName = "ImportantThings", order = 0)]
     public class ImportantThings : ScriptableObject
     {
         public ContactFilter2D whatIsEnemy;
@@ -14,4 +11,3 @@ namespace DefaultNamespace
             pMHP
         }
     }
-}

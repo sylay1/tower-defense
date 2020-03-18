@@ -10,21 +10,30 @@
           <e p="nigg.shader" t="Include" />
         </e>
         <e p="Scripts" t="Include">
+          <e p="ABullet" t="Include">
+            <e p="Bullet.cs" t="Include" />
+            <e p="Bullet_spike.cs" t="Include" />
+          </e>
+          <e p="AEffect" t="Include">
+            <e p="Effect_Burn.cs" t="Include" />
+            <e p="Effect_Poison.cs" t="Include" />
+          </e>
+          <e p="AEnemy" t="Include">
+            <e p="Enemy.cs" t="Include" />
+          </e>
+          <e p="ATower" t="Include">
+            <e p="Tower.cs" t="Include" />
+            <e p="Tower_SpikeShooter.cs" t="Include" />
+          </e>
           <e p="BasedClasses" t="Include">
             <e p="ABullet.cs" t="Include" />
             <e p="AEffect.cs" t="Include" />
             <e p="AEnemy.cs" t="Include" />
             <e p="ATower.cs" t="Include" />
           </e>
-          <e p="Bullet.cs" t="Include" />
-          <e p="Bullet_spike.cs" t="Include" />
-          <e p="Effect_Poison.cs" t="Include" />
-          <e p="Enemy.cs" t="Include" />
           <e p="EnemySpawner.cs" t="Include" />
           <e p="GameMaster.cs" t="Include" />
           <e p="ImportantThings.cs" t="Include" />
-          <e p="Tower.cs" t="Include" />
-          <e p="Tower_SpikeShooter.cs" t="Include" />
           <e p="UI_Info.cs" t="Include" />
           <e p="Waypoint.cs" t="Include" />
         </e>

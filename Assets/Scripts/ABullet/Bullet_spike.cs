@@ -15,7 +15,7 @@ public class Bullet_spike :ABullet
     }
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (true)//here paste the check is it is the enemy 
+        if (other.CompareTag("Enemy"))//here paste the check is it is the enemy 
         {
             other.gameObject.SendMessage("GetDamage",damage);
         }

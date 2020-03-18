@@ -2,17 +2,8 @@
 public class Tower_SpikeShooter : ATower
 {
     public int spikesnumber=2;//the spikes will be shoot with an equal angles,
-
-    void Update()
-    {
-        if (_dpsTimer > dps)
-        {
-            Shoot();
-        }
-        _dpsTimer += Time.deltaTime;
-    }
-
-    public void Shoot()
+    
+    public override void Shoot()
     {
         for (int i = 0; i < spikesnumber; i++)
         {

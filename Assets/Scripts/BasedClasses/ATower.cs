@@ -10,16 +10,17 @@ public abstract class ATower : MonoBehaviour
     public float dps = 0.5f;
     public AEnemy CurrentEnemy;
     public float _dpsTimer;
+    public bool StopShooting = false;
     void Update()
     {
         if (_dpsTimer > dps)
         {
             Shoot();
         }
-        _dpsTimer += Time.deltaTime;
+        if(!StopShooting)_dpsTimer += Time.deltaTime;
     }
 
-    public void Shoot()
+    public virtual void Shoot()
     {
         if (CurrentEnemy)
         {

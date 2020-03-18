@@ -2,7 +2,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
-using DefaultNamespace;
 using UnityEngine;
 
 public class GameMaster : MonoBehaviour
@@ -14,7 +13,7 @@ public class GameMaster : MonoBehaviour
         DESTRUCTION,BUILDING,UPGRADING,NOTHING
     }
     public STATE state = STATE.NOTHING;
-    public GameObject MouseCheck;
+    public GameObject MouseCheck,TowerRangeIndicator;
     public SpriteRenderer mcr;
     public ImportantThings im;
     public List<ATower> TowersToPlace = new List<ATower>();
@@ -29,11 +28,16 @@ public class GameMaster : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.B))
         {
-            state = STATE.BUILDING;
+            if (state == STATE.BUILDING)
+            {
+                Destroy(MouseCheck);
+                state = STATE.NOTHING;
+            }
+            else state = STATE.BUILDING;
         }
-
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            if(MouseCheck)Destroy(MouseCheck);
             state = STATE.NOTHING;
         }
 
@@ -42,12 +46,20 @@ public class GameMaster : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.Alpha1))ChangeTowertype(TowersToPlace[0]);
             if(Input.GetKeyDown(KeyCode.Alpha2))ChangeTowertype(TowersToPlace[1]);
             if(Input.GetKeyDown(KeyCode.Alpha3))ChangeTowertype(TowersToPlace[2]);
+            if(Input.GetKeyDown(KeyCode.Alpha4))ChangeTowertype(TowersToPlace[3]);
+            if(Input.GetKeyDown(KeyCode.Alpha5))ChangeTowertype(TowersToPlace[4]);
+            if(Input.GetKeyDown(KeyCode.Alpha6))ChangeTowertype(TowersToPlace[5]);
+            if(Input.GetKeyDown(KeyCode.Alpha7))ChangeTowertype(TowersToPlace[6]);
+            if(Input.GetKeyDown(KeyCode.Alpha8))ChangeTowertype(TowersToPlace[7]);
+            if(Input.GetKeyDown(KeyCode.Alpha9))ChangeTowertype(TowersToPlace[8]);
             if (!MouseCheck)
             {
                 MouseCheck = new GameObject();
                 var c = MouseCheck.AddComponent<CircleCollider2D>();
                 mcr = MouseCheck.AddComponent<SpriteRenderer>();
                 var tsr = towerToPlace.GetComponent<SpriteRenderer>();
+                var indicator = Instantiate(TowerRangeIndicator,MouseCheck.transform.position,MouseCheck.transform.rotation,MouseCheck.transform);
+                indicator.transform.localScale = new Vector3(towerToPlace.radious/4,towerToPlace.radious/4,1);
                 mcr.sprite = tsr.sprite;
                 mcr.color =new Color( tsr.color.r,tsr.color.g,tsr.color.b,0.5f);
                 MouseCheck.transform.localScale = towerToPlace.transform.lossyScale;
@@ -117,12 +129,15 @@ public class GameMaster : MonoBehaviour
         MouseCheck = new GameObject();
         var c = MouseCheck.AddComponent<CircleCollider2D>();
         mcr = MouseCheck.AddComponent<SpriteRenderer>();
+        
         var tsr = towerToPlace.GetComponent<SpriteRenderer>();
         mcr.sprite = tsr.sprite;
         mcr.color =new Color( tsr.color.r,tsr.color.g,tsr.color.b,0.5f);
         MouseCheck.transform.localScale = towerToPlace.transform.lossyScale;
         Debug.Log(towerToPlace.transform.localScale.x + "  "+towerToPlace.transform.lossyScale.x );
         c.radius = towerToPlace.radiousC/towerToPlace.transform.lossyScale.x;
+        var indicator = Instantiate(TowerRangeIndicator,MouseCheck.transform.position,MouseCheck.transform.rotation,MouseCheck.transform);
+        indicator.transform.localScale = new Vector3(towerToPlace.radious/4,towerToPlace.radious/4,1);
         MouseCheck.layer = LayerMask.NameToLayer("Abstract");
         MouseCheck.tag = "MouseCheck";
     }

@@ -1,9 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-namespace DefaultNamespace
-{
-    [CreateAssetMenu(fileName = "new Poison", menuName = "Effect/Poison", order = 0)]
+[CreateAssetMenu(fileName = "new Poison", menuName = "Effect/Poison", order = 0)]
     public class Effect_Poison : AEffect
     {
         public float damage;
@@ -16,4 +14,3 @@ namespace DefaultNamespace
             Debug.Log("Poison tick");
         }
     }
-}

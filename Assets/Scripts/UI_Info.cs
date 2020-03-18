@@ -44,7 +44,7 @@ public class UI_Info : MonoBehaviour
                 stateInfo.text = "doin nothin";
                 break;
             case GameMaster.STATE.BUILDING:
-                stateInfo.text = "building";
+                stateInfo.text = "building: "+GameMaster.gm.towerToPlace.name;
                 break;
             case GameMaster.STATE.DESTRUCTION:
                 stateInfo.text = "destructing";
